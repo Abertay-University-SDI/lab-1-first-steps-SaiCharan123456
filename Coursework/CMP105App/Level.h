@@ -12,8 +12,14 @@ public:
 	void render();
 
 private:
+	
+	enum class Direction {Up, Down, Left, Right};
+
 	// Default functions for rendering to the screen.
 
 	// Default variables for level class.
+	sf::CircleShape m_player;
+	float m_speed = 100;
+	Direction m_direction;
 	
 };
